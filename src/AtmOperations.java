@@ -1,3 +1,4 @@
+
 public interface AtmOperations {
     public void viewBalance();
     public void withdrawAmount(double withdrawAmount);
