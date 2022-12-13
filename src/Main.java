@@ -21,19 +21,28 @@ public class Main {
             int choice = scanner.nextInt();
             if(choice==1){
 
-            }else if (choice==2){
                 atmOperationImplementation.viewBalance();
+            }else if (choice==2){
+
+                System.out.print("Enter amount to withdraw: ");
+                double withdrawAmount = scanner.nextDouble();
+                atmOperationImplementation.withdrawAmount(withdrawAmount);
 
             } else if (choice==3) {
+                System.out.print("Enter the amount to deposit: ");
+                double depositAmount = scanner.nextDouble();
+                atmOperationImplementation.depositAmount(depositAmount);
 
             } else if (choice==4) {
+                atmOperationImplementation.viewMinStatement();
+
 
             } else if (choice==5) {
                 System.out.println("Collect the ATM card.\nThank you for using our bank");
                 System.exit(0);
             }
             else{
-                System.out.println("please enter collect choice ");
+                System.out.print("please enter collect choice ");
             }
             }
 
